@@ -5,7 +5,7 @@ networks:
     external:
       name: web
 services:
-  api:
+  ce:
     labels:
       - 'traefik.backend=christian-exodus'
       - 'traefik.port=4077'
@@ -15,3 +15,4 @@ services:
     image: wayimp/christian-exodus
     ports:
       - 4077:4077
+      - 27020:27017

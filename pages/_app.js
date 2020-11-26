@@ -7,7 +7,7 @@ import {
   useTheme
 } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
-import theme from './theme'
+import theme from '../private/theme'
 import App from 'next/app'
 import { SnackbarProvider } from 'notistack'
 
