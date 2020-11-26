@@ -1,0 +1,17 @@
+version: '3.4'
+  
+networks:
+  web:
+    external:
+      name: web
+services:
+  api:
+    labels:
+      - 'traefik.backend=christian-exodus'
+      - 'traefik.port=4077'
+      - 'traefik.frontend.rule=Host:www.christianexodus.org'
+    networks:
+      web:
+    image: wayimp/christian-exodus
+    ports:
+      - 4077:4077
