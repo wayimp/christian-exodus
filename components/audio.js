@@ -27,7 +27,7 @@ const Audio = props => {
         }
         action={
           <IconButton onClick={() => window.open(props.url, '_blank')}>
-            <PlayCircleFilledWhiteTwoToneIcon  />
+            <PlayCircleFilledWhiteTwoToneIcon style={{ fill: '#0072ea' }} />
           </IconButton>
         }
         title={<Typography variant='subtitle2'>{props.title}</Typography>}

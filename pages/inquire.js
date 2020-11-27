@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import Head from '../components/head'
 import React, { useState } from 'react'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
@@ -53,15 +54,13 @@ const page = () => {
   const theme = useTheme()
   const [inquiry, setInquiry] = useState({})
   const { enqueueSnackbar } = useSnackbar()
+  const router = useRouter()
 
   const changeValue = async (name, value) => {
     const updated = {
       ...inquiry,
       [name]: value
     }
-    //enqueueSnackbar(JSON.stringify(updated), {
-    //  variant: 'success'
-    //})
     setInquiry(updated)
   }
 
@@ -103,6 +102,7 @@ const page = () => {
         enqueueSnackbar('Inquiry sent', {
           variant: 'success'
         })
+        router.push('/')
       })
       .catch(err => {
         enqueueSnackbar('Error sending inquiry', {

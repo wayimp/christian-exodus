@@ -89,7 +89,7 @@ We seek to grow a network of independent Christian communities, where people can
           <Header
             title='Pastor Matt Trewhella'
             subtitle='Mercy Seat Christian Church'
-            paragraphs='Pastor Matt Trewhella has been teaching the doctrine of the lesser magistrate, encouraging true men to due their duty and take a stand against ever-encroaching tyranny.'
+            paragraphs='Pastor Matt Trewhella has been teaching the doctrine of the lesser magistrate, encouraging true men to do their duty and take a stand against ever-encroaching tyranny.'
           />
           <Audio
             title='(Pt 1) A White Lie and Black Death: Why Does the Church Believe the COVID19 Lie?'
