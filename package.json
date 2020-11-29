@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start -p 4077"
+    "start": "next start -p 4077",
+    "black": "node scripts/blackRegiment.js"
   },
   "keywords": [],
   "author": "",
@@ -14,13 +15,14 @@
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
-    "axios": "^0.21.0",
     "dotenv": "^8.2.0",
+    "fs": "0.0.1-security",
     "mongodb": "^3.6.3",
     "mongoose": "^5.10.16",
     "next": "^10.0.2",
     "nodemailer": "^6.4.16",
     "notistack": "^1.0.1",
+    "puppeteer": "^5.5.0",
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "react-modal-image": "^2.5.0",

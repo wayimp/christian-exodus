@@ -9,6 +9,8 @@ import Audio from '../components/audio'
 import Header from '../components/header'
 import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
+import MapTwoToneIcon from '@material-ui/icons/MapTwoTone'
+import IconButton from '@material-ui/core/IconButton'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -140,6 +142,23 @@ We seek to grow a network of independent Christian communities, where people can
             url='https://www.youtube.com/watch?v=5H69dtlSvPE&ab_channel=LibertyFellowshipMT'
             avatar='./chuck-baldwin.jpg'
           />
+        </Paper>
+        <Paper className={classes.paper}>
+          <Header
+            title='Black Regiment Pastors'
+            subtitle='Find a Church Near You'
+            paragraphs='Click Below to View Map of Addresses from ChuckBaldwinLive.com'
+          />
+          <IconButton
+            onClick={() =>
+              window.open(
+                'https://batchgeo.com/map/c37094eebec10dd5cdc027e3a60dcc55',
+                '_blank'
+              )
+            }
+          >
+            <MapTwoToneIcon style={{ fill: '#0072ea' }} size='xx-large' />
+          </IconButton>
         </Paper>
       </Grid>
     </Grid>
